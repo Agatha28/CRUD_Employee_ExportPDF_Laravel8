@@ -15,4 +15,8 @@ class EmployeeController extends Controller
     public function addemployee(){
         return view('addemployee');
     }
+
+    public function insertdata(Request $request){
+        Employee::create($request->all());
+    }
 }
