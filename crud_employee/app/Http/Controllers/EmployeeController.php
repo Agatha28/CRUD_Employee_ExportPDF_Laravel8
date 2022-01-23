@@ -17,6 +17,7 @@ class EmployeeController extends Controller
     }
 
     public function insertdata(Request $request){
+        dd($request->all());
         Employee::create($request->all());
     }
 }
