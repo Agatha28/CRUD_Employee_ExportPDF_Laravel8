@@ -11,38 +11,12 @@
     <title>EMPLOYEE CRUD LARAVEL 8</title>
   </head>
   <body>
-    <h1 class="text-center mb-4">Employee's Data</h1>
+    <h1 class="text-center mb-4">Add Employee's Data</h1>
 
     <div class="container">
-        <button type="button" class="btn btn-success">+Add Data</button>
+        <button type="button" class="btn btn-success">Add Data</button>
         <div class="row">
-            <table class="table">
-                <thead>
-                  <tr>
-                    <th scope="col">#</th>
-                    <th scope="col">Name</th>
-                    <th scope="col">Gender</th>
-                    <th scope="col">Phone Number</th>
-                    <th scope="col">Action</th>
-                  </tr>
-                </thead>
-                <tbody>
-
-                @foreach ($data as $row)
-                  <tr>
-                    <th scope="row">{{ $row->id}}</th>
-                    <td>{{ $row->nama}}</td>
-                    <td>{{ $row->jeniskelamin}}</td>
-                    <td>0{{ $row->notelpon}}</td>
-                    <td>
-                        <button type="button" class="btn btn-danger">Delete</button>
-                        <button type="button" class="btn btn-warning">Edit</button>
-                    </td>
-                  </tr>
-                  @endforeach
-
-                </tbody>
-              </table>
+            
         </div>
     </div>
 
