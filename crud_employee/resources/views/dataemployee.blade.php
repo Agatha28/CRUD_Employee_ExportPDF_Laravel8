@@ -32,8 +32,8 @@
                     <td>Otto</td>
                     <td>@mdo</td>
                     <td>
-                        <button type="button" class="btn btn-danger">Danger</button>
-                        <button type="button" class="btn btn-warning">Warning</button>
+                        <button type="button" class="btn btn-danger">Delete</button>
+                        <button type="button" class="btn btn-warning">Edit</button>
                     </td>
                   </tr>
                 </tbody>
