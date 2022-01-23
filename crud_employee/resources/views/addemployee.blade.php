@@ -29,9 +29,8 @@
                       <label for="exampleInputEmail1" class="form-label">Gender</label>
                       <select class="form-select" aria-label="Default select example">
                         <option selected>Select Gender</option>
-                        <option value="1">One</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
                       </select>
                     </div>
 
