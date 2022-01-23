@@ -11,7 +11,7 @@
     <title>EMPLOYEE CRUD LARAVEL 8</title>
   </head>
   <body>
-    <h1>Employee's Data</h1>
+    <h1 class="text-center mb-4">Employee's Data</h1>
 
     <div class="container">
         <div class="row">
