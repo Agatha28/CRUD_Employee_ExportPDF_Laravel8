@@ -9,7 +9,6 @@ class EmployeeController extends Controller
 {
     public function index(){
         $data = Employee::all();
-        dd($data);
-        return view('dataemployee');
+        return view('dataemployee', compact('data'));
     }
 }
