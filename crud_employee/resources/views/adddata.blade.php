@@ -14,7 +14,7 @@
     <h1 class="text-center mb-4">Add Employee's Data</h1>
 
     <div class="container">
-        <button type="button" class="btn btn-success">Add Data</button>
+        <button type="button" class="btn btn-success"></button>
         <div class="row">
             
         </div>
