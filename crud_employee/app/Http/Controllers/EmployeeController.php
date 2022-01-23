@@ -11,4 +11,8 @@ class EmployeeController extends Controller
         $data = Employee::all();
         return view('dataemployee', compact('data'));
     }
+
+    public function addemployee(){
+        return view('addemployee');
+    }
 }
