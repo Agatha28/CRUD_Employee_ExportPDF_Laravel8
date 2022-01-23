@@ -14,8 +14,12 @@
     <h1 class="text-center mb-4">Add Employee's Data</h1>
 
     <div class="container">
+
         <div class="row">
-            
+            <div class="card">
+              <div class="card-body"></div>
+              
+            </div>
         </div>
     </div>
 
