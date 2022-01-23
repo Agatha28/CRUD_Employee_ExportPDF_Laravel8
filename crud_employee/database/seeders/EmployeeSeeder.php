@@ -15,7 +15,7 @@ class EmployeeSeeder extends Seeder
     public function run()
     {
         DB::table('employees')->([
-            'name' => 'Agatha Santoso',
+            'nama' => 'Agatha Santoso',
             'jeniskelamin' => 'female',
             'notelpon'=> '081275548770',
         ]);
