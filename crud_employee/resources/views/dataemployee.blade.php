@@ -35,7 +35,7 @@
                     <td>{{ $row->nama}}</td>
                     <td>{{ $row->jeniskelamin}}</td>
                     <td>0{{ $row->notelpon}}</td>
-                     <td>0{{ $row->created_at}}</td>
+                     <td>{{ $row->created_at}}</td>
                     <td>
                         <button type="button" class="btn btn-danger">Delete</button>
                         <button type="button" class="btn btn-warning">Edit</button>
