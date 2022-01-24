@@ -14,7 +14,7 @@
     <h1 class="text-center mb-4">Employee's Data</h1>
 
     <div class="container">
-        <button type="button" class="btn btn-success">+Add Data</button>
+        <a href="/addemployee" class="btn btn-success">+Add Data</a>
         <div class="row">
             <table class="table">
                 <thead>
