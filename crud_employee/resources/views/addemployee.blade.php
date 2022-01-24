@@ -35,7 +35,7 @@
                       </select>
                     </div>
 
-                    <div class="">
+                    <div class="mb-3">
                       <label for="exampleInputEmail1" class="form-label">Phone Number</label>
                       <input type="number" name="notelpon" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                     </div>
