@@ -20,4 +20,9 @@ class EmployeeController extends Controller
         Employee::create($request->all());
         return redirect()->route('employee')->with('success', 'Adding Data Success');
     }
+
+    public function showdata($id){
+        $data = Employee::find($id);
+        dd($data)
+    }
 }
