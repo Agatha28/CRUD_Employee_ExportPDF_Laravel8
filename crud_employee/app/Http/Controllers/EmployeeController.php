@@ -18,6 +18,6 @@ class EmployeeController extends Controller
 
     public function insertdata(Request $request){
         Employee::create($request->all());
-        return redirect()->route('employee');
+        return redirect()->route('employee')->with('success', 'Adding Data Success');
     }
 }

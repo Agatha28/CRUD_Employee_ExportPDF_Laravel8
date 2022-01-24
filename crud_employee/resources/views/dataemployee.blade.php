@@ -16,10 +16,15 @@
     <div class="container">
         <a href="/addemployee" class="btn btn-success">+Add Data</a>
         <div class="row">
+       @if($message = Session::get('success'))
+          <div class="alert alert-success" role="alert">
+            {{ $message }}
+          </div>
+       @endif
             <table class="table">
                 <thead>
                   <tr>
-                    <th scope="col">#</th>
+                    <th scope="col">No</th>
                     <th scope="col">Name</th>
                     <th scope="col">Gender</th>
                     <th scope="col">Phone Number</th>
@@ -35,7 +40,7 @@
                     <td>{{ $row->nama}}</td>
                     <td>{{ $row->jeniskelamin}}</td>
                     <td>0{{ $row->notelpon}}</td>
-                     <td>{{ $row->created_at}}</td>
+                     <td>{{ $row->created_at -> format('D M Y')}}</td>
                     <td>
                         <button type="button" class="btn btn-danger">Delete</button>
                         <button type="button" class="btn btn-warning">Edit</button>
