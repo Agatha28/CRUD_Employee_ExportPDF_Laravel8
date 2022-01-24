@@ -27,4 +27,9 @@ class EmployeeController extends Controller
 
         return view('showdata', compact('data'));
     }
+
+    public function updatedata(Request $request, $id){
+        $data = Employee::find($id);
+        $data->update($request->(all));
+    }
 }
