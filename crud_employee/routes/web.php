@@ -22,4 +22,4 @@ Route::get('/employee',[EmployeeController::class,'index'])->name('employee');
 Route::get('/addemployee',[EmployeeController::class,'addemployee'])->name('addemployee');
 Route::post('/insertdata',[EmployeeController::class,'insertdata'])->name('insertdata');
 
-Route::post('/showdata/{id}',[EmployeeController::class,'showdata'])->name('showdata');
+Route::get('/showdata/{id}',[EmployeeController::class,'showdata'])->name('showdata');

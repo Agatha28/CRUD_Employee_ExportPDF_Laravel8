@@ -43,7 +43,7 @@
                      <td>{{ $row->created_at -> format('D M Y')}}</td>
                     <td>
                         <button type="button" class="btn btn-danger">Delete</button>
-                        <button type="button" class="btn btn-warning">Edit</button>
+                        <a href="/showdata/{{ $row->id }}" class="btn btn-warning">Edit</a>
                     </td>
                   </tr>
                   @endforeach

@@ -23,6 +23,6 @@ class EmployeeController extends Controller
 
     public function showdata($id){
         $data = Employee::find($id);
-        dd($data)
+        dd($data);
     }
 }
