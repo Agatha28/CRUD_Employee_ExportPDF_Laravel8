@@ -25,6 +25,6 @@ class EmployeeController extends Controller
         $data = Employee::find($id);
         //dd($data);
 
-        return view();
+        return view('showdata', compact('data'));
     }
 }

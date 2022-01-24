@@ -11,7 +11,7 @@
     <title>EMPLOYEE CRUD LARAVEL 8</title>
   </head>
   <body>
-    <h1 class="text-center mb-4">Add Employee's Data</h1>
+    <h1 class="text-center mb-4">Edit Employee's Data</h1>
 
     <div class="container">
 
@@ -19,17 +19,17 @@
             <div class="col-8">
               <div class="card">
                 <div class="card-body">
-                  <form action="/insertdata" method="POST" enctype="multipart/form-data">
+                  <form action="" method="POST" enctype="multipart/form-data">
                     @csrf
                     <div class="mb-3">
                       <label for="exampleInputEmail1" class="form-label">Name</label>
-                      <input type="text" name="nama" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                      <input type="text" name="nama" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="{{ $data-> nama}}">
                     </div>
 
                     <div class="mb-3">
                       <label for="exampleInputEmail1" class="form-label">Gender</label>
                       <select class="form-select" name="jeniskelamin" aria-label="Default select example">
-                        <option selected>Select Gender</option>
+                        <option selected>{{ $data-> jeniskelamin }}</option>
                         <option value="male">Male</option>
                         <option value="female">Female</option>
                       </select>
@@ -37,7 +37,7 @@
 
                     <div class="mb-3">
                       <label for="exampleInputEmail1" class="form-label">Phone Number</label>
-                      <input type="number" name="notelpon" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                      <input type="number" name="notelpon" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="{{ $data-> notelpon}}">
                     </div>
                   
                     <button type="submit" class="btn btn-primary">Submit</button>
