@@ -31,5 +31,7 @@ class EmployeeController extends Controller
     public function updatedata(Request $request, $id){
         $data = Employee::find($id);
         $data->update($request->(all));
+
+        return redirect()->route('employee')->with('success', 'Update Data Success');
     }
 }
