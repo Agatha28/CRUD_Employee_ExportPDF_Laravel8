@@ -34,9 +34,12 @@
                 </thead>
                 <tbody>
 
+                @php
+                  $no = 1;
+                @endphp
                 @foreach ($data as $row)
                   <tr>
-                    <th scope="row">{{ $row->id}}</th>
+                    <th scope="row">{{ $no++ }}</th>
                     <td>{{ $row->nama}}</td>
                     <td>{{ $row->jeniskelamin}}</td>
                     <td>0{{ $row->notelpon}}</td>
