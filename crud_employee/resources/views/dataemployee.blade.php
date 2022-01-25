@@ -26,6 +26,7 @@
                   <tr>
                     <th scope="col">No</th>
                     <th scope="col">Name</th>
+                    <th scope="col">Photo</th>
                     <th scope="col">Gender</th>
                     <th scope="col">Phone Number</th>
                     <th scope="col">Created</th>
@@ -41,6 +42,7 @@
                   <tr>
                     <th scope="row">{{ $no++ }}</th>
                     <td>{{ $row->nama}}</td>
+                    <td>{{ $row->foto}}</td>
                     <td>{{ $row->jeniskelamin}}</td>
                     <td>0{{ $row->notelpon}}</td>
                      <td>{{ $row->created_at -> format('D M Y')}}</td>
