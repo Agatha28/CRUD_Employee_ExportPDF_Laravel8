@@ -17,6 +17,11 @@ class EmployeeController extends Controller
     }
 
     public function insertdata(Request $request){
+        $data = Employee::create($request->all());
+        if($request->hasFile('foto')){
+            $request->file('foto')->move('fotopegawai/', $request->file('foto'));
+        }
+
         Employee::create($request->all());
         return redirect()->route('employee')->with('success', 'Adding Data Success');
     }
