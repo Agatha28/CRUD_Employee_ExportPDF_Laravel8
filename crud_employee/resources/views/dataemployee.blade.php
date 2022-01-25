@@ -42,10 +42,10 @@
                     <td>0{{ $row->notelpon}}</td>
                      <td>{{ $row->created_at -> format('D M Y')}}</td>
                     <td>
-                        <button type="button" class="btn btn-danger">Delete</button>
+                        <a href="" class="btn btn-danger">Delete</a>
                         <a href="/showdata/{{ $row->id }}" class="btn btn-warning">Edit</a>
                     </td>
-                  </tr>
+                  </tr> 
                   @endforeach
 
                 </tbody>
