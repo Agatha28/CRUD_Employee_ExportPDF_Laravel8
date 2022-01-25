@@ -19,7 +19,9 @@ class EmployeeController extends Controller
     public function insertdata(Request $request){
         $data = Employee::create($request->all());
         if($request->hasFile('foto')){
-            $request->file('foto')->move('fotopegawai/', $request->file('foto'));
+            $request->file('foto')->move('fotopegawai/', $request->file('foto')->getClientOriginalName());
+            $data->foto = $request->file('foto')->getClientOriginalName());
+            $data->save();
         }
 
         Employee::create($request->all());
