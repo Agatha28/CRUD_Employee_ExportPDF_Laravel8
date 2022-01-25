@@ -34,4 +34,12 @@ class EmployeeController extends Controller
 
         return redirect()->route('employee')->with('success', 'Update Data Success');
     }
+
+    public function delete($id){
+        $data = Employee::find($id);
+        $data->delete();
+
+        return redirect()->route('employee')->with('success', 'Delete Data Success');
+    }
 }
+
