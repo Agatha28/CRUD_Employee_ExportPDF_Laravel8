@@ -24,3 +24,5 @@ Route::post('/insertdata',[EmployeeController::class,'insertdata'])->name('inser
 
 Route::get('/showdata/{id}',[EmployeeController::class,'showdata'])->name('showdata');
 Route::post('/updatedata/{id}',[EmployeeController::class,'updatedata'])->name('updatedata');
+
+Route::get('/delete/{id}',[EmployeeController::class,'delete'])->name('delete');
