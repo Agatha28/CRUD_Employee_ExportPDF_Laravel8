@@ -91,7 +91,7 @@
                   icon: "success",
                 });
               } else {
-                swal("Your imaginary file is safe!");
+                swal("Data is not deleted");
               }
             });
     });
