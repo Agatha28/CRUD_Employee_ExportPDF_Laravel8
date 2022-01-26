@@ -94,7 +94,7 @@
                   icon: "success",
                 });
               } else {
-                swal("Data is not deleted");
+                swal("Data is not deleted!");
               }
             });
     });
