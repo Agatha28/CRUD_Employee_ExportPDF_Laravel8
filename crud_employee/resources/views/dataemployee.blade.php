@@ -88,7 +88,7 @@
             })
             .then((willDelete) => {
               if (willDelete) {
-                swal("Poof! Your imaginary file has been deleted!", {
+                swal("Deleting data success!", {
                   icon: "success",
                 });
               } else {
