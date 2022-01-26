@@ -79,9 +79,10 @@
   <script>
     $('.delete').click( function(){
       var employeeid = $(this).attr('data-id');
+      var name = $(this).attr('data-nama');
       swal({
               title: "Are you sure?",
-              text: "You are deleting this data with id "+employeeid+" ",
+              text: "You are deleting this data with name "+name+" ",
               icon: "warning",
               buttons: true,
               dangerMode: true,
