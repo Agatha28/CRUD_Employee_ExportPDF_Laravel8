@@ -51,7 +51,7 @@
                     <td>
                        
                         <a href="/showdata/{{ $row->id }}" class="btn btn-warning">Edit</a>
-                        <a href="#" class="btn btn-danger delete" data-id="{{ $row->id }}">Delete</a>
+                        <a href="#" class="btn btn-danger delete" data-id="{{ $row->id }}" data-nama="{{ $row->nama }}" >Delete</a>
                     </td>
                   </tr> 
                   @endforeach
