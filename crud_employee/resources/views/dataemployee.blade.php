@@ -78,9 +78,10 @@
   <script src="https://code.jquery.com/jquery-3.6.0.slim.js" integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
   <script>
     $('.delete').click( function(){
+      var employeeid = $(this).attr('data-id');
       swal({
               title: "Are you sure?",
-              text: "Once deleted, you will not be able to recover this imaginary file!",
+              text: "You are deleting this data with id "+employeeid+" ",
               icon: "warning",
               buttons: true,
               dangerMode: true,
