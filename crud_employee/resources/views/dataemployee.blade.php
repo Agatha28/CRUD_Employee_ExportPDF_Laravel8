@@ -87,6 +87,7 @@
               dangerMode: true,
             })
             .then((willDelete) => {
+              window.location = "/delete/"+employeeid+""
               if (willDelete) {
                 swal("Deleting data success!", {
                   icon: "success",
