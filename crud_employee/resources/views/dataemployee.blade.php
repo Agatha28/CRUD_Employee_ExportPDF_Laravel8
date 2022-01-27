@@ -8,7 +8,7 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.css" integrity="sha512-3pIirOrwegjM6erE5gPSwkUzO+3cTjpnV9lexlNZqvupR64iZBnOOTiiLPb9M36zpMScbmUNIcHUqKD47M719g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
+
     <title>EMPLOYEE CRUD LARAVEL 8</title>
   </head>
   <body>
@@ -17,11 +17,11 @@
     <div class="container">
         <a href="/addemployee" class="btn btn-success">+Add Data</a>
         <div class="row">
-       @if($message = Session::get('success'))
+      <!-- @if($message = Session::get('success'))
           <div class="alert alert-success" role="alert">
             {{ $message }}
           </div>
-       @endif
+       @endif -->
             <table class="table">
                 <thead>
                   <tr>
@@ -68,6 +68,10 @@
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
+    <script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
 
@@ -80,7 +84,7 @@
     -->
   </body>
 
-  <script src="https://code.jquery.com/jquery-3.6.0.slim.js" integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
+ 
   <script>
     $('.delete').click( function(){
       var employeeid = $(this).attr('data-id');
@@ -103,5 +107,12 @@
               }
             });
     });
+</script>
+
+
+<script>
+    @if (Session::has('success')) 
+      toastr.success("{{Session::get('success')}}")
+    @endif
 </script>
 </html>
