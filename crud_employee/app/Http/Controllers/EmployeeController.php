@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 
 class EmployeeController extends Controller
 {
-    public function index(Request $request){
+    public function index(Reques $request){
 
         if($request->has('search')){
              $data = Employee::where('nama','LIKE','%' .$request->search.'%')->paginate(5);
