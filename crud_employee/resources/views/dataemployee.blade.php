@@ -18,8 +18,11 @@
         <a href="/addemployee" class="btn btn-success">+Add Data</a>
         <div class="row g-3 align-items-center mt-2">
               <div class="col-auto">
-                <input type="search" id="inputPassword6" name="search" class="form-control" aria-describedby="passwordHelpInline" placeholder="Search">
+                <form action="/employee" method="GET">
+                  <input type="search" id="inputPassword6" name="search" class="form-control" aria-describedby="passwordHelpInline" placeholder="Search">
+                </form>
               </div>
+              
             </div>
         <div class="row">
       <!-- @if($message = Session::get('success'))
