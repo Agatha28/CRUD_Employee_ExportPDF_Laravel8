@@ -8,7 +8,7 @@ use Illuminate\Http\Request;
 class EmployeeController extends Controller
 {
     public function index(){
-        $data = Employee::all();
+        $data = Employee::paginate(5);
         return view('dataemployee', compact('data'));
     }
 
