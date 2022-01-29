@@ -5,6 +5,9 @@ namespace App\Http\Controllers;
 use App\Models\Employee;
 use Illuminate\Http\Request;
 use PDF;
+use Maatwebsite\Excel\Facades\Excel;
+
+
 
 class EmployeeController extends Controller
 {
@@ -61,6 +64,10 @@ class EmployeeController extends Controller
         view()->share('data', $data);
         $pdf = PDF::loadview('dataemployee-pdf');
         return $pdf->download('data.pdf');
+    }
+
+    public function exportexcel(){
+        return Excel::download(new EmployeeExport, 'datapegawai.xlsx');
     }
 }
 
