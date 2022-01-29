@@ -28,7 +28,7 @@
 </head>
 <body>
 
-<h1>DATA EMPLOYEE</h1>
+<h1>Data Employee</h1>
 
 <table id="customers">
 
