@@ -39,11 +39,14 @@
     <th>Phone Number</th>
   </tr>
 
-  <tr>
-    <td>{{ $row->nama}}</td>
-    <td>{{ $row->jeniskelamin}}</td>
-    <td>0{{ $row->notelpon}}</td>
-  </tr>
+@foreach($data as $row)
+    <tr>
+        <td>{{ $row->nama}}</td>
+        <td>{{ $row->jeniskelamin}}</td>
+        <td>0{{ $row->notelpon}}</td>
+    </tr>
+@endforeach
+  
   
 </table>
 
