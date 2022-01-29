@@ -26,3 +26,7 @@ Route::get('/showdata/{id}',[EmployeeController::class,'showdata'])->name('showd
 Route::post('/updatedata/{id}',[EmployeeController::class,'updatedata'])->name('updatedata');
 
 Route::get('/delete/{id}',[EmployeeController::class,'delete'])->name('delete');
+
+
+//export PDF
+Route::get('/exportpdf',[EmployeeController::class,'exportpdf'])->name('exportpdf');
