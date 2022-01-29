@@ -59,6 +59,7 @@ class EmployeeController extends Controller
 
         view()->share('data', $data);
         $pdf = PDF::loadview('dataemployee-pdf');
+        return $pdf->download('data.pdf');
     }
 }
 
