@@ -53,5 +53,9 @@ class EmployeeController extends Controller
 
         return redirect()->route('employee')->with('success', 'Delete Data Success');
     }
+
+    public function exportpdf(){
+        return 'berhasil';
+    }
 }
 
