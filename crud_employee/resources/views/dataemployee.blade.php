@@ -24,7 +24,7 @@
               </div>
 
               <div class="col-auto">
-                  <a href="#" class="btn btn-info">Export PDF</a>
+                  <a href="/exportpdf" class="btn btn-info">Export PDF</a>
               </div>
               
             </div>
