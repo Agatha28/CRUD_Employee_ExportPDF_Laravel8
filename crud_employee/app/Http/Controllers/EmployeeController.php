@@ -55,7 +55,10 @@ class EmployeeController extends Controller
     }
 
     public function exportpdf(){
-        return 'berhasil';
+        $data = Employee::all();
+
+        view()->share('data', $data);
+        $pdf = PDF::loadview('dataemployee-pdf');
     }
 }
 
