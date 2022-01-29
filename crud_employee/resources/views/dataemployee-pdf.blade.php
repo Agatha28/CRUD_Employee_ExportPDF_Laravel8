@@ -39,8 +39,13 @@
     <th>Phone Number</th>
   </tr>
 
+@php
+    $no=1;
+@endphp
+
 @foreach($data as $row)
     <tr>
+        <td>{{ $no++}}</td>
         <td>{{ $row->nama}}</td>
         <td>{{ $row->jeniskelamin}}</td>
         <td>0{{ $row->notelpon}}</td>
