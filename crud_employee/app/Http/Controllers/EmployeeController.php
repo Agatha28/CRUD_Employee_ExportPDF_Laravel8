@@ -6,6 +6,7 @@ use App\Models\Employee;
 use Illuminate\Http\Request;
 use PDF;
 use Maatwebsite\Excel\Facades\Excel;
+use App\Http\Controllers\EmployeeExport;
 
 
 
